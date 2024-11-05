@@ -9,7 +9,12 @@ import XCTest
 import EssentialFeed
 
 class RemoteFeedLoaderTest: XCTestCase {
-    
+
+    func test_bool() {
+        let testEnabled = true
+        XCTAssertTrue(testEnabled)
+    }
+
     func test_init_doesNotRequestDataFromURL(){
         let (_, client) = makeRemote()
         
